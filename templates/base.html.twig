@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
     <title>Wild Séries</title>
 </head>
 <body>
+<header>
+    {% include 'navbar.html.twig' %}
+</header>
 <h1>index</h1>
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+{% endblock %}
 </body>
 </html>
