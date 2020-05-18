@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6034a442-c270-4b79-a16e-e1328bd3bc3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wild-series.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wild-series.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/WildController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/WildController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Wild/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Wild/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +145,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/Wild" />
+    </key>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -165,6 +164,10 @@
       <workItem from="1589216404095" duration="2448000" />
       <workItem from="1589266783681" duration="135000" />
       <workItem from="1589267631914" duration="700000" />
+      <workItem from="1589357146484" duration="232000" />
+      <workItem from="1589782683526" duration="3710000" />
+      <workItem from="1589803770556" duration="646000" />
+      <workItem from="1589804890195" duration="1520000" />
     </task>
     <servers />
   </component>
@@ -172,9 +175,9 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2343" y="504" width="424" height="484" key="FileChooserDialogImpl" timestamp="1589267730901">
+    <state x="2343" y="504" width="424" height="484" key="FileChooserDialogImpl" timestamp="1589357366719">
       <screen x="1600" y="207" width="1920" height="1080" />
     </state>
-    <state x="2343" y="504" width="424" height="484" key="FileChooserDialogImpl/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1589267730901" />
+    <state x="2343" y="504" width="424" height="484" key="FileChooserDialogImpl/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1589357366719" />
   </component>
 </project>
