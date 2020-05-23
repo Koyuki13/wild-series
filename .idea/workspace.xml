@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6034a442-c270-4b79-a16e-e1328bd3bc3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/WildController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/WildController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Wild/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Wild/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Wild/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Wild/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +140,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/Wild" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -145,11 +150,12 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/Wild" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/Wild" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -173,7 +179,8 @@
       <workItem from="1589891186422" duration="4185000" />
       <workItem from="1589962032195" duration="594000" />
       <workItem from="1589976505989" duration="3092000" />
-      <workItem from="1589985434665" duration="977000" />
+      <workItem from="1589985434665" duration="2593000" />
+      <workItem from="1590220326128" duration="13478000" />
     </task>
     <servers />
   </component>
