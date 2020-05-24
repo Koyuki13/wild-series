@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6034a442-c270-4b79-a16e-e1328bd3bc3e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/WildController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/WildController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Wild/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Wild/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Wild/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Wild/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Program.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Program.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,6 +134,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -180,7 +179,9 @@
       <workItem from="1589962032195" duration="594000" />
       <workItem from="1589976505989" duration="3092000" />
       <workItem from="1589985434665" duration="2593000" />
-      <workItem from="1590220326128" duration="13478000" />
+      <workItem from="1590220326128" duration="14968000" />
+      <workItem from="1590251356408" duration="1049000" />
+      <workItem from="1590320519383" duration="2998000" />
     </task>
     <servers />
   </component>
@@ -188,10 +189,11 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1875" y="45" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589977755702">
-      <screen x="1600" y="0" width="1360" height="768" />
+    <state x="1988" y="270" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590251823820">
+      <screen x="1600" y="207" width="1920" height="1080" />
     </state>
     <state x="1875" y="45" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1533.873/1600.0.1360.768@1600.0.1360.768" timestamp="1589977755702" />
+    <state x="1988" y="270" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1590251823820" />
     <state x="525" y="269" width="595" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589809714355">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
@@ -205,6 +207,10 @@
     </state>
     <state x="660" y="267" width="374" height="392" key="FileChooserDialogImpl/67.27.1533.873/1600.0.1360.768@67.27.1533.873" timestamp="1589810413289" />
     <state x="2343" y="504" width="424" height="484" key="FileChooserDialogImpl/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1589357366719" />
+    <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1590250834966">
+      <screen x="1600" y="207" width="1920" height="1080" />
+    </state>
+    <state width="263" height="500" key="HiddenNamespacesPopup/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1590250834966" />
     <state x="322" y="98" width="1022" height="737" key="SettingsEditor" timestamp="1589810368043">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
