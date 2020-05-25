@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Category;
 use App\Entity\Program;
+use App\Entity\Season;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -87,6 +88,65 @@ class WildController extends AbstractController
 
         return $this->render('Wild/category.html.twig', [
             'programs' => $program,
+        ]);
+    }
+
+    /**
+     * Getting a program  from a slug passed through the url.
+     *
+     * @param string $slug The slugger
+     * @Route("/showByProgram/{slug<^[a-z0-9-]+$>}", defaults={"slug" = null}, name="show_program")
+     * @return Response
+     */
+    public function showByProgram(?string $slug = 'aucune saison selectionnée'): Response
+    {
+        if(!$slug) {
+            throw $this
+                ->createNotFoundException('No slug has been sent to find a program in program\'s table.');
+        }
+        $slug = preg_replace(
+            '/-/',
+            ' ', ucwords(trim(strip_tags($slug)), "-")
+        );
+        $program = $this->getDoctrine()
+            ->getRepository(Program::class)
+            ->findOneBy(['title' => mb_strtolower($slug)]);
+        if (!$program) {
+            throw $this->createNotFoundException(
+                'No program with ' .$slug.' title.'
+            );
+        }
+
+        return $this->render('Wild/showByProgram.html.twig', [
+            'program' => $program,
+            'slug' => $slug
+        ]);
+    }
+
+    /**
+     * @param int $id
+     * @Route ("/showBySeason/{id}", name="show_season")
+     * @return Response
+     */
+    public function showBySeason(int $id): Response
+    {
+        $season = $this->getDoctrine()
+            ->getRepository(Season::class)
+            ->findOneBy(['id' => $id]);
+        if (!$id) {
+            throw $this->createNotFoundException(
+                'No season with ' .$id.' identifier.'
+            );
+        }
+        $program = $season->getProgram();
+        $slug = preg_replace(
+            '/ /',
+            '-', strtolower($program->getTitle())
+        );
+
+        return $this->render('Wild/showBySeason.html.twig', [
+            'season' => $season,
+            'slug' => $slug
         ]);
     }
 }

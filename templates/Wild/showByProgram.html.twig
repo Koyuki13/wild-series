@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Programmes{% endblock %}
+
+{% block body %}
+    <div class="container my-5">
+        <h1>Toutes les saisons de la série {{ program.title }} :</h1>
+        {% for season in program.seasons %}
+            <div>
+                <a href="{{ path('show_season', { 'id': season.id }) }}">
+                    <h2>{{ season.year }}</h2>
+                </a>
+            </div>
+        {% else %}
+            Aucune saison trouvée.
+        {% endfor %}
+        <a href="{{ path('app_index') }}">
+            Retour à l'accueil
+        </a>
+    </div>
+{% endblock %}
