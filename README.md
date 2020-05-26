@@ -1,5 +1,8 @@
 # wild-series
 
+** Lien de la vidéo pour la quête 9 de symfony
+https://www.loom.com/share/be0c8d4e89a44cfd90bb697d6a9aed86
+
 **Créer nouveau projet Symfony
 
 symfony new --full <name_project> --version=lts
