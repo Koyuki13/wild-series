@@ -10,10 +10,10 @@
             </a>
         </h1>
         {% for episode in season.episodes %}
-            <div>
+            <div class="mt-5">
                 <h2>{{ episode.title }}</h2>
                 <p>{{ episode.synopsis }}</p>
-                <img class="align-self-start mr-3" src="{{ episode.poster }}" alt="{{ episode.title }} poster">
+                <img class="align-self-start mr-3 w-50 h-50" src="{{ episode.poster }}" alt="{{ episode.title }} poster">
             </div>
         {% else %}
             Aucun épisode trouvé.
