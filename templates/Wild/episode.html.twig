@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Episodes{% endblock %}
+
+{% block body %}
+    <div class="container my-5">
+        <h1>La série {{ program.title }}</h1>
+        <img class="align-self-start mr-3 w-50 h-50" src="{{ program.poster }}" alt="{{ program.title }} poster">
+            <a href="{{ path('show_program', { slug: program.title | lower | replace({" ":"-"}) }) }}">
+                Retour au programme
+            </a>
+     <div class="card-body">
+         <h2>Episode{{ episode.number }} - Saison {{ season.number }} - {{ episode.title }}</h2>
+         <p>{{ episode.synopsis }}</p>
+     </div>
+    <div>
+        <a href="{{ path('show_season', { id: season.id }) }}">
+            Retour à la saison
+        </a>
+    </div>
+        <a href="{{ path('app_index') }}">
+            Retour à l'accueil
+        </a>
+    </div>
+{% endblock %}

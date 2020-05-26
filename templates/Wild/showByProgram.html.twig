@@ -6,7 +6,7 @@
     <div class="container my-5">
         <h1>Toutes les saisons de la série {{ program.title }} :</h1>
         {% for season in program.seasons %}
-            <div>
+            <div class="card">
                 <a href="{{ path('show_season', { 'id': season.id }) }}">
                     <h2>{{ season.year }}</h2>
                 </a>
