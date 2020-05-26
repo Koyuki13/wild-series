@@ -1,7 +1,10 @@
 # wild-series
 
-** Lien de la vidéo pour la quête 9 de symfony
+**Lien de la vidéo pour la quête 9 de symfony
 https://www.loom.com/share/be0c8d4e89a44cfd90bb697d6a9aed86
+
+**Lien de la vidéo pour la quête 10 de symfony
+https://www.loom.com/share/8cb781af17e1447e8f5c896e41b178d8
 
 **Créer nouveau projet Symfony
 
