@@ -172,7 +172,7 @@ class WildController extends AbstractController
     }
 
     /**
-     * @Route ("/add", name="add")
+     * @Route ("/add", name="category_add")
      */
     public function add()
     {
@@ -182,7 +182,7 @@ class WildController extends AbstractController
             ['method' => Request::METHOD_GET]
         );
 
-        return $this->render('Wild/add.html.twig', [
+        return $this->render('category/add.html.twig', [
             'form' => $form->createView(),
         ]);
     }
