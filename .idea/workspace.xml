@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6034a442-c270-4b79-a16e-e1328bd3bc3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/WildController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/WildController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Wild/showByProgram.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Wild/showByProgram.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Wild/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Wild/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +187,9 @@
       <workItem from="1590421789495" duration="9454000" />
       <workItem from="1590475661112" duration="3722000" />
       <workItem from="1590497896524" duration="7080000" />
-      <workItem from="1590510739882" duration="3244000" />
+      <workItem from="1590510739882" duration="3650000" />
+      <workItem from="1590563635238" duration="8847000" />
+      <workItem from="1590666109826" duration="1787000" />
     </task>
     <servers />
   </component>
@@ -196,11 +197,11 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1988" y="270" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590430700245">
+    <state x="1988" y="270" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590568653142">
       <screen x="1600" y="207" width="1920" height="1080" />
     </state>
     <state x="1875" y="45" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1533.873/1600.0.1360.768@1600.0.1360.768" timestamp="1589977755702" />
-    <state x="1988" y="270" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1590430700245" />
+    <state x="1988" y="270" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1590568653142" />
     <state x="525" y="269" width="595" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589809714355">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
