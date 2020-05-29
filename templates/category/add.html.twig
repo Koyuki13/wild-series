@@ -4,9 +4,16 @@
 
 {% block body %}
     <div class="container">
-        <div class="row">
-            <h1>Add a new category</h1>
-            {{ form(form) }}
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m12">
+                    <h1>Add a new category</h1>
+                    {{ form_start(form) }}
+                    {{ form_widget(form) }}
+                    <button class="btn">{{ button_label|default('Save') }}</button>
+                    {{ form_end(form) }}
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}

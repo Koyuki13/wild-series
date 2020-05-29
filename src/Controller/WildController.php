@@ -173,17 +173,29 @@ class WildController extends AbstractController
 
     /**
      * @Route ("/add", name="category_add")
+     * @param Request $request
+     * @return Response
      */
-    public function add()
+    public function add(Request $request): Response
     {
+        $category = new Category();
         $form = $this->createForm(
             CategoryType::class,
-            null,
-            ['method' => Request::METHOD_GET]
+            $category
         );
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $data = $form->getData();
 
-        return $this->render('category/add.html.twig', [
-            'form' => $form->createView(),
-        ]);
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($data);
+            $entityManager->flush();
+
+            return $this->redirectToRoute('wild_index');
+        }
+
+            return $this->render('category/add.html.twig', [
+                'form' => $form->createView(),
+            ]);
     }
 }
