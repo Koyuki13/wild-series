@@ -3,6 +3,9 @@
 **Lien de la vidéo pour la quête 11 de symfony
 https://www.loom.com/share/66b2187d89b3420588fbbf56a26fcdc3
 
+**Lien de la vidéo pour la quête 12 de symfony
+https://www.loom.com/share/32ebca53f1634770ac40d32c71271fbb
+
 **Créer nouveau projet Symfony
 
 symfony new --full <name_project> --version=lts
