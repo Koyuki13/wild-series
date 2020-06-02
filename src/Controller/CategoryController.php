@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class CategoryController extends AbstractController
 {
     /**
-     * @Route ("/add", name="category_add")
+     * @Route ("/category", name="category_add")
      * @param Request $request
      * @return Response
      */
