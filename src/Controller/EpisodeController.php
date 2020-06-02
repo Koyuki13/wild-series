@@ -20,7 +20,7 @@ class EpisodeController extends AbstractController
      */
     public function index(EpisodeRepository $episodeRepository): Response
     {
-        return $this->render('episode/index.html.twig', [
+        return $this->render('episode/show.html.twig', [
             'episodes' => $episodeRepository->findAll(),
         ]);
     }

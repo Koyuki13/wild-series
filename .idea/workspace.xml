@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6034a442-c270-4b79-a16e-e1328bd3bc3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +136,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Projets/orleans-php-2003-project-loireetorleans" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../java_script" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -192,7 +191,7 @@
       <workItem from="1590735122110" duration="3691000" />
       <workItem from="1590757975905" duration="1891000" />
       <workItem from="1590840873396" duration="557000" />
-      <workItem from="1591018729943" duration="578000" />
+      <workItem from="1591018729943" duration="2316000" />
     </task>
     <servers />
   </component>
@@ -218,11 +217,11 @@
     </state>
     <state x="566" y="212" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1533.873/1600.0.1360.768@67.27.1533.873" timestamp="1589810427489" />
     <state x="2225" y="436" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1590503878990" />
-    <state x="2343" y="504" width="374" height="392" key="FileChooserDialogImpl" timestamp="1590760118800">
+    <state x="2343" y="504" width="374" height="392" key="FileChooserDialogImpl" timestamp="1591019446338">
       <screen x="1600" y="207" width="1920" height="1080" />
     </state>
     <state x="660" y="267" width="374" height="392" key="FileChooserDialogImpl/67.27.1533.873/1600.0.1360.768@67.27.1533.873" timestamp="1589810413289" />
-    <state x="2343" y="504" width="424" height="484" key="FileChooserDialogImpl/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1590760118800" />
+    <state x="2343" y="504" width="424" height="484" key="FileChooserDialogImpl/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1591019446338" />
     <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1590250834966">
       <screen x="1600" y="207" width="1920" height="1080" />
     </state>
