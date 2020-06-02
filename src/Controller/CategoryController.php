@@ -29,10 +29,8 @@ class CategoryController extends AbstractController
         );
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
-            $data = $form->getData();
-
             $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($data);
+            $entityManager->persist($category);
             $entityManager->flush();
 
             return $this->redirectToRoute('wild_index');
