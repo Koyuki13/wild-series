@@ -1,16 +1,7 @@
 # wild-series
 
-**Lien de la vidéo pour la quête 11 de symfony
-https://www.loom.com/share/66b2187d89b3420588fbbf56a26fcdc3
-
-**Lien de la vidéo pour la quête 12 de symfony
-https://www.loom.com/share/32ebca53f1634770ac40d32c71271fbb
-
-**Lien de la vidéo pour la quête 14 de symfony
-https://www.loom.com/share/52dab341df8f481098df490b366f1ae3
-
-**Lien de la vidéo pour la quete 15 de symfony
-https://www.loom.com/share/51e1e7b699594e7db84da2a2df889e2a
+**Lien de la vidéo pour la quête 13 de symfony
+https://www.loom.com/share/6a5218c339c94e1796fd489da1f99768
 
 **Créer nouveau projet Symfony
 
