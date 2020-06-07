@@ -82,7 +82,8 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
                 ->setSummary($data['summary'])
                 ->setPoster($data['poster'])
                 ->setCountry($data['country'])
-                ->setYear($data['year']);
+                ->setYear($data['year'])
+                ->setCategory($this->getReference($data['category']));
 
             $manager->persist($program);
             $this->addReference('program_' . $i, $program);

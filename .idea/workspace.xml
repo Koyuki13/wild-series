@@ -4,8 +4,8 @@
     <list default="true" id="6034a442-c270-4b79-a16e-e1328bd3bc3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/wild-series.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wild-series.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/ProgramFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ProgramFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Program.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Program.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +127,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
     </include_path>
   </component>
   <component name="ProjectId" id="1bQvGp9146yorobmqKS0G8ZsArl" />
@@ -203,6 +204,7 @@
       <workItem from="1591168256486" duration="1501000" />
       <workItem from="1591186782187" duration="3429000" />
       <workItem from="1591511925371" duration="1808000" />
+      <workItem from="1591525592375" duration="852000" />
     </task>
     <servers />
   </component>
