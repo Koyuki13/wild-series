@@ -6,6 +6,7 @@ https://www.loom.com/share/6a5218c339c94e1796fd489da1f99768
 **Liens de la vidéo pour la quête 16 de symfony
 https://www.loom.com/share/f6175b51b33e4d1789d519869d62540a : vidéo 1
 https://www.loom.com/share/845a4d20a3924b6da503f3aa19911be3 : vidéo 2
+https://www.loom.com/share/e1019981f7b744fc992f54cc2d0dbf0c : vidéo avec les faker
 
 **Créer nouveau projet Symfony
 
