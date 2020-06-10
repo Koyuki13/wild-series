@@ -6,7 +6,14 @@ class Slugify
 {
     public function generate(string $input): string
     {
-        $input = [
+
+        return trim(strtolower(preg_replace(['#[^A-Za-z0-9 -]+#', '#[\s-]+#'], ['', '-'],
+            $this->removeSpecialCharacters($input))));
+    }
+
+    public function removeSpecialCharacters(string $input): string
+    {
+        $slug = [
             '/[áàâãªä]/u' => 'a',
             '/[ÁÀÂÃÄ]/u' => 'A',
             '/[ÍÌÎÏ]/u' => 'I',
@@ -23,6 +30,7 @@ class Slugify
             '/Ñ/' => 'N',
             '/[«»]/u' => '',
         ];
-        return trim(strtolower(preg_replace(['#[^A-Za-z0-9 -]+#', '#[\s-]+#'], ['', '-'], $input)));
+
+        return preg_replace(array_keys($slug), array_values($slug), $input);
     }
 }

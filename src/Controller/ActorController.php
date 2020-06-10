@@ -15,7 +15,7 @@ use App\Service\Slugify;
 class ActorController extends AbstractController
 {
     /**
-     * @Route("/", name="actor_index", methods={"GET"})
+     * @Route("/actor", name="actor_index", methods={"GET"})
      * @param ActorRepository $actorRepository
      * @return Response
      */
@@ -57,7 +57,7 @@ class ActorController extends AbstractController
     /**
      * @param Actor $actor
      * @return Response
-     * @Route ("/actor/{id}", name="show_actor")
+     * @Route ("/actor/{slug}", name="show_actor")
      */
     public function show(Actor $actor): Response
     {

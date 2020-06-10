@@ -59,8 +59,11 @@ class ActorFixtures extends Fixture implements DependentFixtureInterface
         }
 
         for ($i = 5; $i < 50; $i++) {
-            $actor->setName($faker->numberBetween(1, 20))
-                ->addProgram($this->getReference($program));
+            $actor = new Actor();
+            $actor->setName($faker->name);
+            $actor->addProgram($this->getReference( 'program_' . rand(0, 5)));
+            $slug = $slugify->generate($actor->getName());
+            $actor->setSlug($slug);
             $manager->persist($actor);
             $this->addReference('actor_' . $i, $actor);
         }
