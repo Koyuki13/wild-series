@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <style>
+        h1 {
+            background-color: #D63447;
+            color: #F6EEDF;
+            padding: 8px;
+
+        }
+
+        h1 a {
+            text-decoration: none;
+            color: #F6EEDF;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .announce-text {
+            margin-left: 8px;
+        }
+
+        body {
+            background-color: #D1CEBD;
+        }
+
+        .link {
+            margin-top: 16px;
+        }
+
+        .link {
+            font-size: 20px;
+        }
+
+        .series {
+            display: flex;
+        }
+
+        .series-info {
+            margin: 0 16px;
+        }
+
+        .summary {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Greetings <a rel="nofollow">{{ email.to[0].address }}</a></h1>
+
+<p class="announce-text">Une nouvelle série est arrivée!</p>
+<div class="series">
+    <img src="{{ program.poster }}" alt="{{ program.title }} poster"/>
+    <div class="series-info">
+        <h2>{{ program.title }}</h2>
+        <p class="summary">{{ program.summary }}</p>
+        <a class="link" href="http://localhost:8000{{ path('show_program', {slug: program.slug}) }}">Aller voir!</a>
+    </div>
+</div>
+</body>
+</html>
