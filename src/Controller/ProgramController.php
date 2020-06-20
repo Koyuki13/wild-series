@@ -8,6 +8,7 @@ use App\Repository\ProgramRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Email;
 use Symfony\Bridge\Twig\Mime\TemplatedEmail;
@@ -35,6 +36,7 @@ class ProgramController extends AbstractController
      * @param Slugify $slugify
      * @param MailerInterface $mailer
      * @return Response
+     * @throws TransportExceptionInterface
      */
     public function new(Request $request, Slugify $slugify, MailerInterface $mailer): Response
     {
@@ -52,16 +54,17 @@ class ProgramController extends AbstractController
             $entityManager->persist($program);
             $entityManager->flush();
 
-            $email = (new TemplatedEmail())
+            $email = (new Email())
                 ->from($this->getParameter('mailer_from'))
                 ->to($this->getParameter('mailer_to'))
-                ->subject('Une nouvelle série est arrivée!')
+                ->subject('Une nouvelle série vient d\'être publiée !')
                 ->htmlTemplate('program/email/notifications.html.twig')
                 ->context([
                     'program' => $program
                 ]);
 
             $mailer->send($email);
+
 
             return $this->redirectToRoute('program_index');
         }
