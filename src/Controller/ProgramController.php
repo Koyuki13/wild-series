@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Program;
 use App\Form\ProgramType;
 use App\Repository\ProgramRepository;
+use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -42,7 +43,7 @@ class ProgramController extends AbstractController
             $email = (new TemplatedEmail())
                 ->from($this->getParameter('mailer_from'))
                 ->to($this->getParameter('mailer_to'))
-                ->subject('A new series has been posted!')
+                ->subject('UNe nouvelle série est arrivée!')
                 ->htmlTemplate('program/email/notifications.html.twig')
                 ->context([
                     'program' => $program
