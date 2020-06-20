@@ -39,6 +39,17 @@ class ProgramController extends AbstractController
             $entityManager->persist($program);
             $entityManager->flush();
 
+            $email = (new TemplatedEmail())
+                ->from($this->getParameter('mailer_from'))
+                ->to($this->getParameter('mailer_to'))
+                ->subject('A new series has been posted!')
+                ->htmlTemplate('program/email/notifications.html.twig')
+                ->context([
+                    'program' => $program
+                ]);
+
+            $mailer->send($email);
+
             return $this->redirectToRoute('program_index');
         }
 
