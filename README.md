@@ -1,7 +1,7 @@
 # wild-series
 
-**Liens de la vidéo pour la quête 17 de symfony
-https://www.loom.com/share/e6bd8e8c671748b49d7882266cb64dd8
+**Liens de la vidéo pour la quête 18 de symfony
+https://www.loom.com/share/95f1bd6b6bd64bb1b7557bea8b41c784
 
 **Créer nouveau projet Symfony
 
