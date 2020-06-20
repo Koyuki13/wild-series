@@ -55,7 +55,7 @@ class ProgramController extends AbstractController
             $email = (new TemplatedEmail())
                 ->from($this->getParameter('mailer_from'))
                 ->to($this->getParameter('mailer_to'))
-                ->subject('A new series has been posted!')
+                ->subject('Une nouvelle série est arrivée!')
                 ->htmlTemplate('program/email/notifications.html.twig')
                 ->context([
                     'program' => $program
