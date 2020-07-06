@@ -39,6 +39,11 @@ class Episode
      * @ORM\Column(type="string", length=255)
      */
     private $slug;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $episode;
     public function getId(): ?int
     {
         return $this->id;
@@ -97,6 +102,18 @@ class Episode
     public function setSlug(string $slug): self
     {
         $this->slug = $slug;
+
+        return $this;
+    }
+
+    public function getEpisode(): ?string
+    {
+        return $this->episode;
+    }
+
+    public function setEpisode(string $episode): self
+    {
+        $this->episode = $episode;
 
         return $this;
     }

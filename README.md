@@ -5,7 +5,8 @@ https://www.loom.com/share/dd1c3e8bdce44772bdc3c0b8ef0c5673
 
 **Créer nouveau projet Symfony
 
-symfony new --full <name_project> --version=lts
+symfony new --full <name_project> --version=lts ou
+symfony/website-skeleton my_project_name
 
 **Installation de Webpack
 

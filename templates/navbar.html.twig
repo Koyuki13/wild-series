@@ -4,10 +4,16 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link" href="/">Accueil</a>
-            <a class="nav-item nav-link" href="/wild">Wild</a>
-            <a class="nav-item nav-link" href="/program">Liste des séries</a>
+        <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link mx-2" href="{{ path('app_index') }}">Accueil</a>
+            <a class="nav-item nav-link mx-2" href="{{ path('wild_index') }}">Wild</a>
+            <a class="nav-item nav-link mx-2" href="/program">Liste des séries</a>
+        {% if app.user %}
+            {{ app.user.email }}
+            <a class="nav-item nav-link mx-2" href="{{ path('app_logout') }}"> Se déconnecter</a>
+        {% else %}
+            <a class="nav-item nav-link mx-2" href="{{ path('app_login') }}"> Se connecter</a>
+        {% endif %}
         </div>
     </div>
 </nav>

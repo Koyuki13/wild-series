@@ -20,21 +20,22 @@ class WildController extends AbstractController
      *
      * @Route("/wild", name="wild_index")
      */
-    public function index() : Response
+    public function index() :Response
     {
-        $programs = $this->getDoctrine()
-            ->getRepository(Program::class)
-            ->findAll();
+        return $this->redirectToRoute('app_index', [], 301);
+//        $programs = $this->getDoctrine()
+//            ->getRepository(Program::class)
+//            ->findAll();
 
-        if (!$programs) {
-            throw $this->createNotFoundException(
-                'No program found in program\'s table.'
-            );
-        }
+//        if (!$programs) {
+//            throw $this->createNotFoundException(
+//                'No program found in program\'s table.'
+//            );
+//        }
 
-        return $this->render('Wild/index.html.twig', [
-            'programs' => $programs,
-        ]);
+//        return $this->render('Wild/index.html.twig', [
+//            'programs' => $programs,
+//        ]);
     }
 
     /**
@@ -164,10 +165,10 @@ class WildController extends AbstractController
     {
         $season = $episode->getSeason();
         $program = $season->getProgram();
-       return $this->render('Wild/episode.html.twig',[
-           'program' => $program,
-           'episode' => $episode,
-           'season' => $season
-       ]);
+        return $this->render('Wild/episode.html.twig',[
+            'program' => $program,
+            'episode' => $episode,
+            'season' => $season
+        ]);
     }
 }
