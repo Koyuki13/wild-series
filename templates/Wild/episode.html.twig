@@ -13,6 +13,18 @@
          <h2>Episode{{ episode.number }} - Saison {{ season.number }} - {{ episode.title }}</h2>
          <p>{{ episode.synopsis }}</p>
      </div>
+        <div>
+            {% for comment in comments %}
+                <div>
+                    <p>{{ comment.author.email }}</p>
+                    <p> {{ comment.rate }}</p>
+                    <p> {{ comment.comment }}</p>
+                </div>
+            {% endfor %}
+        </div>
+        {% if app.user%}
+            {{ include('comment/_form.html.twig') }}
+        {% endif %}
     <div>
         <a href="{{ path('show_season', { id: season.id }) }}">
             Retour à la saison
