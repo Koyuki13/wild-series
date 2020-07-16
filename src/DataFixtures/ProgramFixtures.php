@@ -101,17 +101,6 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
             $i++;
         }
 
-        for ($i = 6; $i < 50; $i++) {
-            $program->setTitle($faker->numberBetween(1, 40))
-                ->setSummary($faker->text)
-                ->setPoster($faker->text)
-                ->setCountry($faker->text)
-                ->setYear($faker->year)
-                ->setCategory($this->getReference($data['category']));
-            $manager->persist($program);
-            $this->addReference('program_' . $i, $program);
-        }
-
         $manager->flush();
     }
 }

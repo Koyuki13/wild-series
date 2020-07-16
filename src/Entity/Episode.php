@@ -43,11 +43,6 @@ class Episode
     private $slug;
 
     /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $episode;
-
-    /**
      * @ORM\OneToMany(targetEntity="App\Entity\Comment", mappedBy="episode", orphanRemoval=true)
      */
     private $comments;
@@ -114,18 +109,6 @@ class Episode
     public function setSlug(string $slug): self
     {
         $this->slug = $slug;
-
-        return $this;
-    }
-
-    public function getEpisode(): ?string
-    {
-        return $this->episode;
-    }
-
-    public function setEpisode(string $episode): self
-    {
-        $this->episode = $episode;
 
         return $this;
     }

@@ -11,6 +11,8 @@ use App\Form\CategoryType;
 use App\Form\CommentType;
 use App\Form\ProgramSearchType;
 use App\Repository\CommentRepository;
+use App\Repository\ProgramRepository;
+use App\Repository\SeasonRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
@@ -52,8 +54,10 @@ class WildController extends AbstractController
      * @Route("/show/{slug<^[a-z0-9-]+$>}", defaults={"slug" = null}, name="wild_show")
      * @return Response
      */
-    public function show(?string $slug = 'aucune série selectionner'): Response
-    {
+    public function show(
+        ?string $slug = 'aucune série selectionner',
+        ProgramRepository $programRepository
+    ): Response{
         if(!$slug) {
             throw $this
                 ->createNotFoundException('No slug has been sent to find a program in program\'s table.');
@@ -62,9 +66,7 @@ class WildController extends AbstractController
             '/-/',
             ' ', ucwords(trim(strip_tags($slug)), "-")
         );
-        $program = $this->getDoctrine()
-            ->getRepository(Program::class)
-            ->findOneBy(['title' => mb_strtolower($slug)]);
+        $program = $programRepository->findOneBy(['title' => mb_strtolower($slug)]);
         if (!$program) {
             throw $this->createNotFoundException(
                 'No program with ' .$slug.' title, found in program\'s table.'
@@ -73,6 +75,7 @@ class WildController extends AbstractController
 
         return $this->render('Wild/show.html.twig', [
             'program' => $program,
+            'seasons' => $program->getSeasons(),
             'slug' => $slug
         ]);
     }
@@ -141,24 +144,26 @@ class WildController extends AbstractController
      * @Route ("/showBySeason/{id}", name="show_season")
      * @return Response
      */
-    public function showBySeason(int $id): Response
-    {
-        $season = $this->getDoctrine()
-            ->getRepository(Season::class)
-            ->findOneBy(['id' => $id]);
+    public function showBySeason(
+        int $id,
+        SeasonRepository $seasonRepository,
+        ProgramRepository $programRepository
+    ): Response{
+        $season = $seasonRepository->findOneBy(['id' => $id]);
         if (!$id) {
             throw $this->createNotFoundException(
                 'No season with ' .$id.' identifier.'
             );
         }
-        $program = $season->getProgram();
         $slug = preg_replace(
             '/ /',
-            '-', strtolower($program->getTitle())
+            '-', strtolower($season->getProgram()->getTitle())
         );
 
         return $this->render('Wild/showBySeason.html.twig', [
             'season' => $season,
+            'program' => $season->getProgram(),
+            'episodes' => $season->getEpisodes(),
             'slug' => $slug
         ]);
     }

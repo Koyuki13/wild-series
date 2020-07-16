@@ -26,17 +26,21 @@ class EpisodeFixtures extends Fixture implements DependentFixtureInterface
         $faker  =  Faker\Factory::create('fr_FR');
         $slugify = new Slugify();
 
-        for ($i=0; $i<50; $i++) {
-            $episode = new Episode();
-            $episode->setTitle($faker->words(3, true));
-            $episode->setNumber($faker->numberBetween(0, 15));
-            $episode->setSynopsis($faker->text);
-            $slug = $slugify->generate($episode->getTitle());
-            $episode->setSlug($slug);
-            $episode->setSeason($this->getReference('season_' . $i));
+        for ($i=0; $i<6; $i++) {
+            for ($j = 0; $j <= 10; $j++) {
+                $episode = new Episode();
+                $episode->setTitle($faker->words(3, true));
+                $episode->setNumber($j);
+                $episode->setSynopsis($faker->text);
+                $slug = $slugify->generate($episode->getTitle());
+                $episode->setSlug($slug);
+                $episode->setSeason($this->getReference('season_' . $i));
 
-            $manager->persist($episode);
+                $manager->persist($episode);
+            }
         }
         $manager->flush();
+
+
     }
 }
