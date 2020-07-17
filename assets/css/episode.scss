@@ -1,0 +1,14 @@
+.comment-body {
+  padding: 1rem;
+  background-color: #212529;
+  border-radius: 3px;
+  color: #FFFFFF;
+  .comment-message {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px inset #9C9C9C;
+    border-bottom: 1px inset #9C9C9C;
+  }
+}

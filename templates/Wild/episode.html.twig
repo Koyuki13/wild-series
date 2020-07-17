@@ -2,36 +2,58 @@
 
 {% block title %}Episodes{% endblock %}
 
+ {% block stylesheets %}
+     {{ parent() }}
+     {{ encore_entry_link_tags('episode') }}
+ {% endblock %}
+
 {% block body %}
-    <div class="container my-5">
-        <h1>La série {{ program.title }}</h1>
-        <img class="align-self-start mr-3 w-50 h-50" src="{{ program.poster }}" alt="{{ program.title }} poster">
-            <a href="{{ path('show_program', { slug: program.title | lower | replace({" ":"-"}) }) }}">
-                Retour au programme
-            </a>
-     <div class="card-body">
-         <h2>Episode{{ episode.number }} - Saison {{ season.number }} - {{ episode.title }}</h2>
-         <p>{{ episode.synopsis }}</p>
-     </div>
-        <div>
-            {% for comment in comments %}
-                <div>
-                    <p>{{ comment.author.email }}</p>
-                    <p> {{ comment.rate }}</p>
-                    <p> {{ comment.comment }}</p>
-                </div>
-            {% endfor %}
-        </div>
-        {% if app.user%}
-            {{ include('comment/_form.html.twig') }}
-        {% endif %}
-    <div>
-        <a href="{{ path('show_season', { id: season.id }) }}">
-            Retour à la saison
-        </a>
-    </div>
-        <a href="{{ path('app_index') }}">
+    <div class="container mb-5">
+        <a class="btn btn-dark my-3" href="{{ path('app_index') }}">
             Retour à l'accueil
         </a>
+        <a class="btn btn-dark my-3" href="{{ path('show_season', { id: season.id }) }}">
+            Retour à la saison
+        </a>
+        <div class="row">
+            <div class="col-md-4">
+                <img class="align-self-start mr-3" src="{{ program.poster }}" alt="{{ program.title }} poster">
+            </div>
+            <div class="col-md-8">
+                <h1>{{ episode.title }}</h1>
+                <h3 class="mt-0 mb-5">La série {{ program.title }}</h3>
+                <p class="mt-3">Categorie : {{ program.category.name }}</p>
+                <p>Episode {{ episode.number }} - Saison {{ season.number }}</p>
+                <p class="h5 mb-3">{{ program.summary }}</p>
+                <p>{{ episode.synopsis }}</p>
+            </div>
+        </div>
+
+        {# <a class="btn btn-dark my-4" href="{{ path('wild_episode', { 'slug': episode.title|replace({ ' ': '-' }) | lower })  }}">
+             Episode
+         </a> #}
+    </div>
+
+    <div class="container mb-5">
+        {% for comment in comments %}
+            <div class="comment-body mb-2">
+                <div class="comment-header">
+                    <small>Posté par: {{ comment.author.email }}</small>
+                </div>
+                <div class="comment-message">
+                    <p>{{ comment.comment }}</p>
+                </div>
+                <div class="comment-footer text-right">
+                    <small>Cet épisode à été noter: {{ comment.rate }}/20</small>
+                </div>
+            </div>
+        {% endfor %}
+        <div class="my-5">
+            {% if app.user%}
+                {{ include('comment/_form.html.twig') }}
+            {% else %}
+                <p>Vous devez être connecter pour laisser un commentaire</p>
+            {% endif %}
+        </div>
     </div>
 {% endblock %}
