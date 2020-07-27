@@ -3,6 +3,9 @@
 **Liens de la vidéo pour la quête 19 de symfony
 https://www.loom.com/share/e0b8aee77d2f4b8ea31aeb61e23d6a1c
 
+**Liens de la vidéo pour la quête 20 de symfony
+https://www.loom.com/share/728a12b0e5d34b049c73a26fb9f432b6
+
 **Créer nouveau projet Symfony
 
 symfony new --full <name_project> --version=lts ou
