@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6034a442-c270-4b79-a16e-e1328bd3bc3e" name="Default Changelist" comment="" />
+    <list default="true" id="6034a442-c270-4b79-a16e-e1328bd3bc3e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ActorFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ActorFixtures.php" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/CategoryFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/CategoryFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ProgramFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ProgramFixtures.php" afterDir="false" />
+=======
+>>>>>>> d6ea5563cdddaa8e586e48e2f257a8f5287b4250
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -119,6 +127,10 @@
       <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
       <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
     </include_path>
   </component>
   <component name="ProjectId" id="1bQvGp9146yorobmqKS0G8ZsArl" />
@@ -128,17 +140,30 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../findThePreciousSCSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../fork" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/Wild" />
+      <recent name="$PROJECT_DIR$/assets/css" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/Wild" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -151,6 +176,40 @@
       <option name="presentableId" value="Default" />
       <updated>1588577045209</updated>
       <workItem from="1588577112397" duration="655000" />
+      <workItem from="1589216404095" duration="2448000" />
+      <workItem from="1589266783681" duration="135000" />
+      <workItem from="1589267631914" duration="700000" />
+      <workItem from="1589357146484" duration="232000" />
+      <workItem from="1589782683526" duration="3710000" />
+      <workItem from="1589803770556" duration="646000" />
+      <workItem from="1589804890195" duration="5449000" />
+      <workItem from="1589891186422" duration="4185000" />
+      <workItem from="1589962032195" duration="594000" />
+      <workItem from="1589976505989" duration="3092000" />
+      <workItem from="1589985434665" duration="2593000" />
+      <workItem from="1590220326128" duration="14968000" />
+      <workItem from="1590251356408" duration="1049000" />
+      <workItem from="1590320519383" duration="5889000" />
+      <workItem from="1590326476668" duration="2046000" />
+      <workItem from="1590389805641" duration="10960000" />
+      <workItem from="1590421789495" duration="9454000" />
+      <workItem from="1590475661112" duration="3722000" />
+      <workItem from="1590497896524" duration="7080000" />
+      <workItem from="1590510739882" duration="3650000" />
+      <workItem from="1590563635238" duration="8847000" />
+      <workItem from="1590666109826" duration="1787000" />
+      <workItem from="1590735122110" duration="3691000" />
+      <workItem from="1590757975905" duration="1891000" />
+      <workItem from="1590840873396" duration="557000" />
+      <workItem from="1591018729943" duration="2316000" />
+      <workItem from="1591117998126" duration="3041000" />
+      <workItem from="1591125445762" duration="2202000" />
+      <workItem from="1591168256486" duration="1501000" />
+      <workItem from="1591186782187" duration="3429000" />
+      <workItem from="1591511925371" duration="1808000" />
+      <workItem from="1591525592375" duration="1524000" />
+      <workItem from="1591602388333" duration="5102000" />
+      <workItem from="1591634233727" duration="706000" />
     </task>
     <servers />
   </component>
@@ -158,9 +217,50 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2343" y="504" width="424" height="484" key="FileChooserDialogImpl" timestamp="1588582061318">
+    <state x="1988" y="270" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590568653142">
       <screen x="1600" y="207" width="1920" height="1080" />
     </state>
-    <state x="2343" y="504" width="424" height="484" key="FileChooserDialogImpl/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1588582061318" />
+    <state x="1875" y="45" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1533.873/1600.0.1360.768@1600.0.1360.768" timestamp="1589977755702" />
+    <state x="1988" y="270" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1590568653142" />
+    <state x="2174" y="506" width="595" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591608289139">
+      <screen x="1600" y="207" width="1920" height="1080" />
+    </state>
+    <state x="525" y="269" width="595" height="403" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1533.873/1600.0.1360.768@67.27.1533.873" timestamp="1589809714355" />
+    <state x="2174" y="506" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1591608289139" />
+    <state x="2349" y="428" width="412" height="645" key="#com.intellij.ide.util.MemberChooser" timestamp="1590427811024">
+      <screen x="1600" y="207" width="1920" height="1080" />
+    </state>
+    <state x="2349" y="428" width="412" height="645" key="#com.intellij.ide.util.MemberChooser/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1590427811024" />
+    <state x="2225" y="436" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590503878990">
+      <screen x="1600" y="207" width="1920" height="1080" />
+    </state>
+    <state x="566" y="212" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1533.873/1600.0.1360.768@67.27.1533.873" timestamp="1589810427489" />
+    <state x="2225" y="436" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1590503878990" />
+    <state x="2126" y="211" width="374" height="279" key="FileChooserDialogImpl" timestamp="1591513737430">
+      <screen x="1600" y="0" width="1360" height="768" />
+    </state>
+    <state x="2126" y="211" width="374" height="279" key="FileChooserDialogImpl/67.27.1533.873/1600.0.1360.768@1600.0.1360.768" timestamp="1591513737430" />
+    <state x="660" y="267" width="374" height="392" key="FileChooserDialogImpl/67.27.1533.873/1600.0.1360.768@67.27.1533.873" timestamp="1589810413289" />
+    <state x="2343" y="504" width="424" height="484" key="FileChooserDialogImpl/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1591019446338" />
+    <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1590250834966">
+      <screen x="1600" y="207" width="1920" height="1080" />
+    </state>
+    <state width="263" height="500" key="HiddenNamespacesPopup/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1590250834966" />
+    <state x="2178" y="466" width="753" height="568" key="NewPhpClassDialog" timestamp="1591610157398">
+      <screen x="1600" y="207" width="1920" height="1080" />
+    </state>
+    <state x="2178" y="466" width="753" height="568" key="NewPhpClassDialog/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1591610157398" />
+    <state x="322" y="98" width="1022" height="737" key="SettingsEditor" timestamp="1589810368043">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="322" y="98" width="1022" height="737" key="SettingsEditor/67.27.1533.873/1600.0.1360.768@67.27.1533.873" timestamp="1589810368043" />
+    <state x="1890" y="191" width="770" height="393" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1591512546033">
+      <screen x="1600" y="0" width="1360" height="768" />
+    </state>
+    <state x="1890" y="191" width="770" height="393" key="com.jetbrains.php.test.PhpNewTestDialog/67.27.1533.873/1600.0.1360.768@1600.0.1360.768" timestamp="1591512546033" />
+    <state x="2224" y="349" key="run.anything.popup" timestamp="1590430880554">
+      <screen x="1600" y="207" width="1920" height="1080" />
+    </state>
+    <state x="2224" y="349" key="run.anything.popup/67.27.1533.873/1600.207.1920.1080@1600.207.1920.1080" timestamp="1590430880554" />
   </component>
 </project>

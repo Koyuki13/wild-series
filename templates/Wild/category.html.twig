@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Catégories{% endblock %}
+
+{% block body %}
+    <div class="container my-5">
+        <h1>Toutes les catégories de séries de la table program :</h1>
+        {% for program in programs %}
+            <div>
+                <h2>{{ program.id }} / {{ program.title }}</h2>
+                <p>{{ program.summary }}</p>
+            </div>
+        {% else %}
+            Aucune série trouvée.
+        {% endfor %}
+        <a href="{{ path('app_index') }}">
+            Retour à l'accueil
+        </a>
+    </div>
+{% endblock %}

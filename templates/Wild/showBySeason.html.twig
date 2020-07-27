@@ -1,0 +1,28 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Programmes{% endblock %}
+
+{% block body %}
+    <div class="container my-5">
+        <h1>La saison {{ season.number }} de la série
+            <a href="{{ path('show_program', { 'slug': slug }) }}">
+                {{ season.program.title }}
+            </a>
+        </h1>
+        {% for episode in episodes %}
+            <div class="mt-5">
+                <h2>{{ episode.title }}</h2>
+                <p>{{ episode.synopsis }}</p>
+                <img class="align-self-start mr-3 w-50 h-50" src="{{ episode.poster }}" alt="{{ episode.title }} poster">
+            </div>
+            <a class="btn btn-dark" href="{{ path('wild_episode', { 'id': episode.id }) }}">
+                {{ episode.title }}
+            </a>
+        {% else %}
+            Aucun épisode trouvé.
+        {% endfor %}
+    <a href="{{ path('app_index') }}">
+        Retour à l'accueil
+    </a>
+    </div>
+{% endblock %}
